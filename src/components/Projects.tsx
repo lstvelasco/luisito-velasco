@@ -76,15 +76,15 @@ Attendance officers can manage sessions, including opening/closing periods and a
               "TailwindCSS",
               "Flowbite",
             ]}
-            role={["Full Stack", "Solo"]}
+            role={["Full Stack", "Solo", "Personal"]}
             link="https://marsu.echo.infinityfreeapp.com"
           />
           <ProjectCard
             projectName="Porfolio"
-            description="Echo is an announcement platform that allows users to post and interact with announcements. Users can comment publicly on announcements or send private messages for inquiries. Announcements can be validated by an admin; only validated announcements are reflected on a shared calendar viewable by all users. Additionally, users can search for and connect with other users within the app."
+            description="My portfolio is a comprehensive showcase of my work and skills as a web developer and programmer. It features a curated collection of projects, including detailed descriptions, technology stacks, and the impact of each project. Designed with a focus on user experience and modern web design principles, this portfolio highlights my expertise and provides insight into my development process and capabilities."
             imageUrl={portfolio}
             projectTechs={["React", "JavaScript", "TailwindCSS", "DaisyUI"]}
-            role={["Front-end", "Solo"]}
+            role={["Front-end", "Solo", "Personal"]}
             link="https://luisitovelasco.netlify.app"
           />
         </div>
