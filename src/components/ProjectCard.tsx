@@ -1,5 +1,5 @@
 interface Props {
-  projectName: string;
+  projectName: any;
   imageUrl: string;
   description: string;
   projectTechs: string[];
@@ -17,7 +17,7 @@ const ProjectCard = ({
 }: Props) => {
   return (
     <div
-      id={projectName}
+      id={projectName.replaceAll(" ", "")}
       className="card bg-base-100 max-w-96 shadow-xl cursor-pointer transform transition-transform duration-300 hover:scale-105"
     >
       <a href={link} target="_blank">
