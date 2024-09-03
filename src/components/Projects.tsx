@@ -9,7 +9,7 @@ import mscalumniportal from "../assets/images/msclumniportal.png";
 
 const Projects = () => {
   return (
-    <section className="hero bg-base-200 min-h-screen">
+    <section id="projects" className="hero bg-base-200 min-h-screen">
       <div className="hero-content min-w-12 flex-col gap-16">
         <h1 className="text-3xl lg:text-5xl font-bold font-sans">PROJECTS</h1>
         <div className="flex flex-wrap justify-center gap-10">

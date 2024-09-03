@@ -7,7 +7,7 @@ const Hero = () => {
   const [picIsHovered, setPicIsHovered] = useState(false);
 
   return (
-    <section className="hero bg-base-200 mtS-0 lg:mt-10 min-h-screen">
+    <section id="hero" className="hero bg-base-200 mtS-0 lg:mt-10 min-h-screen">
       <div className="hero-content flex-col lg:flex-row-reverse min-w-12 lg:max-w-prose lg:gap-60">
         <img
           src={picIsHovered === true ? ProfilePic2 : ProfilePic}

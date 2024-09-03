@@ -16,7 +16,10 @@ const ProjectCard = ({
   link,
 }: Props) => {
   return (
-    <div className="card bg-base-100 max-w-96 shadow-xl cursor-pointer transform transition-transform duration-300 hover:scale-105">
+    <div
+      id={projectName}
+      className="card bg-base-100 max-w-96 shadow-xl cursor-pointer transform transition-transform duration-300 hover:scale-105"
+    >
       <a href={link} target="_blank">
         <figure id="project-image">
           <img
