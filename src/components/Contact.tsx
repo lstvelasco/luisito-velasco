@@ -33,7 +33,7 @@ const Contact = () => {
           id="contact-form"
           name="contact-form"
           className="form-control flex flex-wrap flex-col gap-8 justify-center"
-          netlify
+          data-netlify="true"
         >
           <label className="input input-bordered input-primary w-full lg:w-[600px] flex items-center gap-2">
             <svg
