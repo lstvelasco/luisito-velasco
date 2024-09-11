@@ -83,8 +83,15 @@ Attendance officers can manage sessions, including opening/closing periods and a
             projectName="Porfolio"
             description="My portfolio is a comprehensive showcase of my work and skills as a web developer and programmer. It features a curated collection of projects, including detailed descriptions, technology stacks, and the impact of each project. Designed with a focus on user experience and modern web design principles, this portfolio highlights my expertise and provides insight into my development process and capabilities."
             imageUrl={portfolio}
-            projectTechs={["React", "TypeScript", "TailwindCSS", "DaisyUI"]}
-            role={["Front-end", "Solo", "Personal"]}
+            projectTechs={[
+              "React",
+              "Laravel",
+              "Livewire",
+              "TypeScript",
+              "TailwindCSS",
+              "DaisyUI",
+            ]}
+            role={["Full Stack", "Solo", "Personal"]}
             link="https://luisitovelasco.netlify.app"
           />
         </div>
