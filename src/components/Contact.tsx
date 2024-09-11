@@ -1,12 +1,18 @@
-import { useState } from "react";
+import { useState, useRef } from "react";
 import Toast from "./Toast"; // Assuming Toast is in the same directory
 
 const Contact = () => {
   const [toastMessage, setToastMessage] = useState<string | null>(null);
+  const formRef = useRef<HTMLFormElement>(null);
 
   const handleSubmit = () => {
     // Trigger the toast with a message when the submit button is clicked
     setToastMessage("Your message has been sent!");
+
+    // Clear form fields
+    if (formRef.current) {
+      formRef.current.reset(); // This will reset the form fields
+    }
 
     // Clear the toast after 3 seconds (optional)
     setTimeout(() => {
@@ -21,10 +27,13 @@ const Contact = () => {
       <div className="hero-content min-w-12 flex-col gap-16">
         <h1 className="text-3xl lg:text-5xl font-bold font-sans">CONTACT</h1>
         <form
+          ref={formRef} // Attach the form reference here
           action=""
           method="POST"
           id="contact-form"
+          name="contact-form"
           className="form-control flex flex-wrap flex-col gap-8 justify-center"
+          netlify
         >
           <label className="input input-bordered input-primary w-full lg:w-[600px] flex items-center gap-2">
             <svg
