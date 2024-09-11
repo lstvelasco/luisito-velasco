@@ -1,4 +1,21 @@
+import { useState } from "react";
+import Toast from "./Toast"; // Assuming Toast is in the same directory
+
 const Contact = () => {
+  const [toastMessage, setToastMessage] = useState<string | null>(null);
+
+  const handleSubmit = () => {
+    // Trigger the toast with a message when the submit button is clicked
+    setToastMessage("Your message has been sent!");
+
+    // Clear the toast after 3 seconds (optional)
+    setTimeout(() => {
+      setToastMessage(null);
+    }, 3000);
+
+    // You can add form submission logic here (e.g., sending the form data)
+  };
+
   return (
     <section className="hero bg-base-200 min-h-screen" id="contact">
       <div className="hero-content min-w-12 flex-col gap-16">
@@ -7,7 +24,7 @@ const Contact = () => {
           action=""
           method="POST"
           id="contact-form"
-          className="form-control flex flex-wrap flex-col gap-8 justify-center "
+          className="form-control flex flex-wrap flex-col gap-8 justify-center"
         >
           <label className="input input-bordered input-primary w-full lg:w-[600px] flex items-center gap-2">
             <svg
@@ -20,8 +37,9 @@ const Contact = () => {
             </svg>
             <input
               type="text"
+              name="name"
               className="grow"
-              placeholder="Username"
+              placeholder="Name"
               required
             />
           </label>
@@ -35,21 +53,32 @@ const Contact = () => {
               <path d="M2.5 3A1.5 1.5 0 0 0 1 4.5v.793c.026.009.051.02.076.032L7.674 8.51c.206.1.446.1.652 0l6.598-3.185A.755.755 0 0 1 15 5.293V4.5A1.5 1.5 0 0 0 13.5 3h-11Z" />
               <path d="M15 6.954 8.978 9.86a2.25 2.25 0 0 1-1.956 0L1 6.954V11.5A1.5 1.5 0 0 0 2.5 13h11a1.5 1.5 0 0 0 1.5-1.5V6.954Z" />
             </svg>
-            <input type="text" className="grow" placeholder="Email" required />
+            <input
+              type="email"
+              name="email"
+              className="grow"
+              placeholder="Email"
+              required
+            />
           </label>
           <textarea
             placeholder="Message"
+            name="message"
             className="textarea w-full lg:w-[600px] textarea-bordered textarea-primary textarea-lg resize-none"
             required
           ></textarea>
 
           <button
             type="button"
-            className="btn w-full m-auto lg:w-fit btn-primary text-2xl cursor-not-allowed transform transition-transform duration-300 hover:scale-105"
+            className="btn w-full m-auto lg:w-fit btn-primary text-2xl transform transition-transform duration-300 hover:scale-105"
+            onClick={handleSubmit}
           >
             Submit
           </button>
         </form>
+
+        {/* Display the toast if a message is set */}
+        {toastMessage && <Toast message={toastMessage} />}
       </div>
     </section>
   );
