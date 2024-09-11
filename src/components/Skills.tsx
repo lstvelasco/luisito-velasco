@@ -49,6 +49,9 @@ const Skills = () => {
             <div className="badge badge-primary font-serif text-base lg:text-2xl w-auto h-auto">
               Laravel
             </div>
+            <div className="badge badge-primary font-serif text-base lg:text-2xl w-auto h-auto">
+              Livewire
+            </div>
           </div>
 
           <div className="divider divider-secondary w-40 m-auto"></div>
