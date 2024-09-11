@@ -28,8 +28,6 @@ const Contact = () => {
         <h1 className="text-3xl lg:text-5xl font-bold font-sans">CONTACT</h1>
         <form
           ref={formRef} // Attach the form reference here
-          action=""
-          method="POST"
           id="contact-form"
           name="contact-form"
           className="form-control flex flex-wrap flex-col gap-8 justify-center"
