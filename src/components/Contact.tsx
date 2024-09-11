@@ -30,9 +30,10 @@ const Contact = () => {
           ref={formRef} // Attach the form reference here
           id="contact-form"
           name="contact-form"
+          method="POST"
           className="form-control flex flex-wrap flex-col gap-8 justify-center"
-          data-netlify="true"
         >
+          <input type="hidden" name="form-name" value="contact-form" />
           <label className="input input-bordered input-primary w-full lg:w-[600px] flex items-center gap-2">
             <svg
               xmlns="http://www.w3.org/2000/svg"
