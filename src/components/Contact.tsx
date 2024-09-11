@@ -10,9 +10,9 @@ const Contact = () => {
     setToastMessage("Your message has been sent!");
 
     // Clear form fields
-    if (formRef.current) {
-      formRef.current.reset(); // This will reset the form fields
-    }
+    // if (formRef.current) {
+    //   formRef.current.reset(); // This will reset the form fields
+    // }
 
     // Clear the toast after 3 seconds (optional)
     setTimeout(() => {
