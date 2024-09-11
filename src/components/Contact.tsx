@@ -78,7 +78,7 @@ const Contact = () => {
           ></textarea>
 
           <button
-            type="button"
+            type="submit"
             className="btn w-full m-auto lg:w-fit btn-primary text-2xl transform transition-transform duration-300 hover:scale-105"
             onClick={handleSubmit}
           >
