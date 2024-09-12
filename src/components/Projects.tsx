@@ -24,11 +24,19 @@ const Projects: React.FC = () => {
   }, []);
 
   if (loading) {
-    return <p>Loading...</p>;
+    return (
+      <section id="projects" className="hero bg-base-200 min-h-screen">
+        <p>Loading...</p>
+      </section>
+    );
   }
 
   if (error) {
-    return <p>Error: {error}</p>;
+    return (
+      <section id="projects" className="hero bg-base-200 min-h-screen">
+        <p>Error: {error}</p>
+      </section>
+    );
   }
 
   return (
@@ -41,7 +49,7 @@ const Projects: React.FC = () => {
               key={project.id}
               projectName={project.title}
               description={project.description}
-              imageUrl={`https://lv-portfoliomanager.infinityfreeapp.com/storage/${project.images[0]?.image_url}`} // Assuming the image comes from your API and is stored locally
+              imageUrl={`http://192.168.1.103:8000/storage/${project.images[0]?.image_url}`} // Assuming the image comes from your API and is stored locally
               projectTechs={project.technologies.map((tech) => tech.name)} // Map over technologies to get their names
               role={project.roles.map((role) => role.name)} // Map over roles to get their names
               link={project.link}
