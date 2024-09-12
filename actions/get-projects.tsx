@@ -2,7 +2,7 @@ import { Project } from "../types";
 
 export const getProjects = async (): Promise<Project[]> => {
   const response = await fetch(
-    "http://lv-portfoliomanager.infinityfreeapp.com/api/projects"
+    "https://lv-portfoliomanager.infinityfreeapp.com/api/projects"
   );
   if (!response.ok) {
     throw new Error(`Error: ${response.statusText}`);
