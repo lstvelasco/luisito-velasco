@@ -49,7 +49,7 @@ const Projects: React.FC = () => {
               key={project.id}
               projectName={project.title}
               description={project.description}
-              imageUrl={`http://192.168.1.103:8000/storage/${project.images[0]?.image_url}`} // Assuming the image comes from your API and is stored locally
+              imageUrl={`http://lv-portfoliomanager.infinityfreeapp.com/storage/${project.images[0]?.image_url}`} // Assuming the image comes from your API and is stored locally
               projectTechs={project.technologies.map((tech) => tech.name)} // Map over technologies to get their names
               role={project.roles.map((role) => role.name)} // Map over roles to get their names
               link={project.link}
