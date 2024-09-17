@@ -34,7 +34,7 @@ const Skills = () => {
             </div>
           </div>
 
-          <div className="divider divider-secondary w-40 m-auto"></div>
+          <div className="divider divider-accent w-40 m-auto"></div>
 
           <div className="flex flex-wrap flex-row gap-2 lg:gap-5 justify-center">
             <div className="badge badge-primary font-serif text-base lg:text-2xl w-auto h-auto">
@@ -54,7 +54,7 @@ const Skills = () => {
             </div>
           </div>
 
-          <div className="divider divider-secondary w-40 m-auto"></div>
+          <div className="divider divider-accent w-40 m-auto"></div>
 
           <div className="flex flex-wrap flex-row gap-2 lg:gap-5 justify-center">
             <div className="badge badge-primary font-serif text-base lg:text-2xl w-auto h-auto">

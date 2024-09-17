@@ -42,7 +42,7 @@ const ProjectCard = ({
         >
           {role.map((item, index) => {
             return (
-              <div key={index} className="badge badge-secondary">
+              <div key={index} className="badge badge-accent">
                 {item}
               </div>
             );
