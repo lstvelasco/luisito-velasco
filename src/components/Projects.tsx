@@ -6,6 +6,7 @@ import checkqr from "../assets/images/checkqr.png";
 import echo from "../assets/images/echo.png";
 import portfolio from "../assets/images/portfolio.png";
 import mscalumniportal from "../assets/images/msclumniportal.png";
+import voxora from "../assets/images/voxora.png";
 
 const Projects = () => {
   return (
@@ -13,6 +14,23 @@ const Projects = () => {
       <div className="hero-content min-w-12 flex-col gap-16">
         <h1 className="text-3xl lg:text-5xl font-bold font-sans">PROJECTS</h1>
         <div className="flex flex-wrap justify-center gap-10">
+          <ProjectCard
+            projectName="Voxora"
+            description='Voxora is a digital freedom wall — a space where voices are felt, not just heard. The name blends "voice" and "aura", capturing the idea that every message carries an emotional presence.
+
+Here, anyone can "voice out" their thoughts, messages, or confessions freely and anonymously. Each voice can be directed to someone and from someone, creating a web of unspoken connections that might resonate deeply with others.'
+            imageUrl={voxora}
+            projectTechs={[
+              "Laravel",
+              "PHP",
+              "JavaScript",
+              "Tailwind",
+              "Livewire",
+              "AlpineJS",
+            ]}
+            role={["Full Stack", "Solo", "Personal"]}
+            link="https://voxora.ct.ws"
+          />
           <ProjectCard
             projectName="Customer Satisfaction Survey System"
             description="The Customer Satisfaction Survey System is a collaborative project designed for Marinduque State University to streamline the feedback collection process. This system replaces manual feedback methods with a more efficient approach by generating unique QR codes for each department. Users can simply scan the QR code to access and complete the survey, making it easier to gather and analyze feedback."
@@ -45,6 +63,7 @@ const Projects = () => {
             role={["Front-end", "Solo"]}
             link="https://www.mscalumni.com"
           />
+
           <ProjectCard
             projectName="CheckQr - Attendance Checker Web Application"
             description="CheckQr simplifies and secures attendance tracking at events. It generates unique QR codes for each attendee, specific to various sessions like check-ins and check-outs.
@@ -62,7 +81,7 @@ Attendance officers can manage sessions, including opening/closing periods and a
               "TailwindCSS",
               "Flowbite",
             ]}
-            role={["Full Stack", "Solo"]}
+            role={["Full Stack", "Solo", "Personal"]}
             link="https://checkqr.rf.gd"
           />
           <ProjectCard
